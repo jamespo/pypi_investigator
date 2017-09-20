@@ -1,0 +1,19 @@
+language: python
+python:
+- 3.5
+- 3.4
+- 3.3
+- 2.7
+- 2.6
+install: pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: jamespo
+  password:
+    secure: jRb9j9/zbxqqfMNSpKPu+/sTpFV8E//5QBEM+SOAnBkkAGFfuwn7pL4w931WygxuzUrFzeeWfMkPVxY9UyWP1rwfq+a3bEgcoUkKTczNgMI93kLIUwlFKtXvUUiaEMyl3t4lpjTHgrMf9m6SqKKBzXvLUNVLv9bNkBHhU+K2BJVGYPSfXvvWXQEjX8bTAFXXzgdkDI/lKOXEwXpNkGh/XCoanFtu6jdUUT2r8ZZeM074SdMGzoDADzMqD1GyiepoQ6g5FLWDW9fSFDn/YnLvvplvPAq/CwD3dnHKuHJ6ZjLOrGk/fhNKenRVqqRPWsYKhpSiFrLK1SckU/qeTHm6u7j+pzMXIG+KcK+Y2et8felGBuwnQ3doGYQaWVyg6pn9yp7ahp0x9I69aHxgfHNX9WA5Y99+/CO8jrVVbRYq9FxpFEscPyvuBDUvzXRpQ/tpO3ex9g8S9ZO9Gtux4trwejdqqJC4ZHO5vXhJhLo0JziAkRIy/RePcMBZGqd4viGjAMjdHjoeVHBHmfyVG1WRM+vRhsbq7Em1RsO8Xm1B9/AT9WBY/PNt1uN7DzR5p+CanTlaLj4wHfGEoK2ZmMPP+XM0VbSD2EjCb9v9Yj0TShmrEOzJpKJ3+V49HEqVLnBLIo2rjPkAE7SQi8TzTZQ8dCY+l6aP0WxeiUN/BqgVXEU=
+  on:
+    tags: true
+    repo: jamespo/pypi_inspector
+    python: 2.7
