@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `pypi_inspector` package."""
+"""Tests for `pypi_investigator` package."""
 
 
 import unittest
 from click.testing import CliRunner
 
-from pypi_inspector import pypi_inspector
-from pypi_inspector import cli
+from pypi_investigator import pypi_investigator
+from pypi_investigator import cli
 
 
-class TestPypi_inspector(unittest.TestCase):
-    """Tests for `pypi_inspector` package."""
+class TestPypi_investigator(unittest.TestCase):
+    """Tests for `pypi_investigator` package."""
 
     def setUp(self):
         """Set up test fixtures, if any."""
@@ -28,7 +28,7 @@ class TestPypi_inspector(unittest.TestCase):
         runner = CliRunner()
         result = runner.invoke(cli.main)
         assert result.exit_code == 0
-        assert 'pypi_inspector.cli.main' in result.output
+        assert 'pypi_investigator.cli.main' in result.output
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output

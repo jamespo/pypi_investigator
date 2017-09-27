@@ -12,7 +12,7 @@ To install PyPI Inspector, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install pypi_inspector
+    $ pip install pypi_investigator
 
 This is the preferred method to install PyPI Inspector, as it will always install the most recent stable release. 
 
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/jamespo/pypi_inspector
+    $ git clone git://github.com/jamespo/pypi_investigator
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/jamespo/pypi_inspector/tarball/master
+    $ curl  -OL https://github.com/jamespo/pypi_investigator/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/jamespo/pypi_inspector
-.. _tarball: https://github.com/jamespo/pypi_inspector/tarball/master
+.. _Github repo: https://github.com/jamespo/pypi_investigator
+.. _tarball: https://github.com/jamespo/pypi_investigator/tarball/master

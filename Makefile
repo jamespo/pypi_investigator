@@ -48,7 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 
 lint: ## check style with flake8
-	flake8 pypi_inspector tests
+	flake8 pypi_investigator tests
 
 test: ## run tests quickly with the default Python
 	
@@ -58,15 +58,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source pypi_inspector setup.py test
+	coverage run --source pypi_investigator setup.py test
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/pypi_inspector.rst
+	rm -f docs/pypi_investigator.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ pypi_inspector
+	sphinx-apidoc -o docs/ pypi_investigator
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

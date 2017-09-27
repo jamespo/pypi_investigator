@@ -25,24 +25,24 @@ test_requirements = [
 ]
 
 setup(
-    name='pypi_inspector',
+    name='pypi_investigator',
     version='0.1.0',
     description="PyPI Inspector checks if a PyPI package is suspicious",
     long_description=readme + '\n\n' + history,
     author="James Powell",
     author_email='james@webscalability.com',
-    url='https://github.com/jamespo/pypi_inspector',
-    packages=find_packages(include=['pypi_inspector']),
+    url='https://github.com/jamespo/pypi_investigator',
+    packages=find_packages(include=['pypi_investigator']),
     entry_points={
         'console_scripts': [
-            'pypi_inspector=pypi_inspector.cli:main'
+            'pypi_investigator=pypi_investigator.cli:main'
         ]
     },
     include_package_data=True,
     install_requires=requirements,
     license="GNU General Public License v3",
     zip_safe=False,
-    keywords='pypi_inspector',
+    keywords='pypi_investigator',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

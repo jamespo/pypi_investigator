@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-"""Unit test package for pypi_inspector."""
+"""Unit test package for pypi_investigator."""
